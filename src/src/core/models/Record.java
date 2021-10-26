@@ -1,4 +1,4 @@
-package src;
+package src.core.models;
 
 public class Record {
     private String key;
@@ -10,6 +10,14 @@ public class Record {
     public Record(String key, String value) {
         this.key = key;
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "key='" + key + '\'' +
+                ", value='" + value + '\'' +
+                '}';
     }
 
     public String getKey() {
